@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Abi-Kurse NRW 2027</title>
+<meta name="description" content="Interaktive Vorbereitung auf das Abitur NRW 2027: Abi Español (Spanisch) und Abi Geographie (Erdkunde) – offline nutzbar, als App installierbar.">
+<meta name="theme-color" content="#16241F">
+<link rel="icon" type="image/png" href="erdkunde/icons/favicon-48.png">
+<link rel="stylesheet" href="erdkunde/fonts/fonts.css">
+<style>
+:root{--paper:#F4F5F1;--surface:#fff;--ink:#16241F;--muted:#55635D;--line:#D3D8CD;--es:#C2362B;--geo:#0B7A5E;--soft:#E8EBE3}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#0D1412;--surface:#15201C;--ink:#E6EAF2;--muted:#9AA4B8;--line:#2A3A34;--es:#F2685C;--geo:#4CC39C;--soft:#1C2925}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 "Atkinson Hyperlegible",system-ui,sans-serif;padding:max(28px,env(safe-area-inset-top)) 16px 48px}
+main{max-width:980px;margin:0 auto}
+h1,h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;text-wrap:balance;margin:.2em 0 .35em}
+h1{font-size:clamp(2rem,6vw,3.2rem)}
+.lead{color:var(--muted);font-size:1.1rem;max-width:62ch}
+.grid{display:grid;gap:18px;margin-top:28px}
+@media (min-width:780px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px;border-top:5px solid var(--c)}
+.card.es{--c:var(--es)}.card.geo{--c:var(--geo)}
+.card h2{font-size:1.7rem}.card h2 b{color:var(--c)}
+.meta{font:600 .8rem "JetBrains Mono",ui-monospace,monospace;color:var(--muted);letter-spacing:.02em}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border-radius:10px;font-weight:700;text-decoration:none;border:1.5px solid var(--c);color:var(--c)}
+.btn.main{background:var(--c);color:#fff}
+@media (prefers-color-scheme:dark){.btn.main{color:#0D1412}}
+ul{margin:.2em 0;padding-left:1.2em}li{margin:.2em 0}
+.note{margin-top:30px;color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);padding-top:16px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--c,#1E4DB7);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+<p class="meta">ABITUR NRW 2027 · INTERAKTIVE LERNKURSE</p>
+<h1>Abi-Kurse NRW 2027</h1>
+<p class="lead">Tag-für-Tag-Vorbereitung mit Lernplan, Übungen, Hörtexten und Probeklausuren. Kein Konto, keine Werbung – der Fortschritt bleibt auf deinem Gerät. Einmal geöffnet, laufen die Kurse auch offline.</p>
+
+<div class="grid">
+  <section class="card es">
+    <p class="meta">SPANISCH · GK NEU · GK FORTGEFÜHRT · LK</p>
+    <h2>Abi <b>Español</b> 2027</h2>
+    <ul><li>30/60/90/120-Tage-Plan, Grammatik, Wortschatz</li><li>Hör- und Leseverstehen, Schreiben, Sprachmittlung, Sprechen</li><li>Probeklausuren je Kursart</li></ul>
+    <div class="row"><a class="btn main" href="espanol/">Kurs öffnen</a><a class="btn" href="espanol/install.html">Auf Handy/Tablet installieren</a><a class="btn" href="espanol/Abi-Espanol-2027-Offline.html" download>Offline-Datei</a></div>
+  </section>
+  <section class="card geo">
+    <p class="meta">GEOGRAPHIE (ERDKUNDE) · GK · LK</p>
+    <h2>Abi <b>Geographie</b> 2027</h2>
+    <ul><li>30/60/90/120-Tage-Plan mit Tagespaketen</li><li>Interaktive Karte, Diagramme, Fallbeispiele, Operatoren</li><li>4 Probeklausuren in GK- und LK-Fassung</li></ul>
+    <div class="row"><a class="btn main" href="erdkunde/">Kurs öffnen</a><a class="btn" href="erdkunde/install.html">Auf Handy/Tablet installieren</a><a class="btn" href="erdkunde/Abi-Erdkunde-2027-Offline.html" download>Offline-Datei</a></div>
+  </section>
+</div>
+
+<p class="note">iPhone/iPad: Kurs in Safari öffnen → Teilen → „Zum Home-Bildschirm“. Anleitungen als PDF: <a href="anleitungen/Espanol-iPhone-iPad.pdf">Español</a> · <a href="anleitungen/Erdkunde-iPhone-iPad.pdf">Geographie</a>.<br>Prüfungsvorgaben nach den amtlichen Dokumenten von Standardsicherung NRW für das Abitur 2027 (Stand September 2026). Übungen und Probeklausuren sind eigens erstellt, keine Originalprüfungen.</p>
+</main>
+</body>
+</html>
