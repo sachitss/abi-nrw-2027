@@ -60,7 +60,7 @@ if ($update) {
     $a = Read-Host "  $owner/$repo gibt es schon. Inhalt dorthin hochladen und ersetzen? (j/n)"
     if ($a -notmatch '^[jJyY]') { Fail 'Abgebrochen. Mit einem anderen Namen erneut starten.' }
   } else {
-    gh repo create "$owner/$repo" --public --description 'Abitur NRW 2027: Abi Espanol und Abi Geographie (Erdkunde) - interaktive Lernkurse'
+    gh repo create "$owner/$repo" --public --description 'Abitur NRW 2027: Abi Mathe, Abi English, Abi Espanol und Abi Geographie (Erdkunde) - interaktive Lernkurse'
     if ($LASTEXITCODE -ne 0) { Fail 'Repository konnte nicht angelegt werden.' }
     Ok "https://github.com/$owner/$repo angelegt"
   }
@@ -103,9 +103,11 @@ if ($repo.ToLower() -eq $host_) { $url = "https://$host_/" } else { $url = "http
 Write-Host ''
 Write-Host '==============================================' -ForegroundColor Green
 Write-Host " Fertig! Startseite:  $url"                     -ForegroundColor Green
+Write-Host " Abi Mathe:           ${url}mathe/"
+Write-Host " Abi English:         ${url}english/"
 Write-Host " Abi Espanol:         ${url}espanol/"
 Write-Host " Abi Geographie:      ${url}erdkunde/"
-Write-Host " QR-Codes fuer Tablets/Handys: ${url}espanol/install.html  und  ${url}erdkunde/install.html"
+Write-Host " QR-Codes fuer Tablets/Handys: ${url}mathe/install.html, ${url}english/install.html, ${url}espanol/install.html  und  ${url}erdkunde/install.html"
 Write-Host '==============================================' -ForegroundColor Green
 Write-Host ' Spaeter aktualisieren: neue Dateien in diesen Ordner kopieren und dieses Skript erneut starten.'
 Start-Process $url

@@ -1,0 +1,51 @@
+{
+ "name": "Abi Mathe 2027 – Mathematik-Abitur NRW",
+ "short_name": "Abi Mathe",
+ "id": "./",
+ "start_url": "./index.html#heute",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "lang": "de",
+ "dir": "ltr",
+ "description": "Vorbereitung auf das Mathematik-Abitur 2027 in NRW: Lernpläne, Lektionen, Graph-Labor, Probeklausuren.",
+ "background_color": "#F3F5F8",
+ "theme_color": "#152033",
+ "categories": [
+  "education"
+ ],
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Heute",
+   "url": "./index.html#heute"
+  },
+  {
+   "name": "Lernplan",
+   "url": "./index.html#plan"
+  },
+  {
+   "name": "Probeklausuren",
+   "url": "./index.html#pruefung"
+  }
+ ]
+}

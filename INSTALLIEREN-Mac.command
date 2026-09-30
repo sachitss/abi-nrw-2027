@@ -48,7 +48,7 @@ else
     read -r -p "  $OWNER/$REPO gibt es schon. Inhalt dorthin hochladen und ersetzen? (j/n) " A
     case "$A" in j*|J*|y*|Y*) ;; *) fail "Abgebrochen. Mit einem anderen Namen erneut starten." ;; esac
   else
-    gh repo create "$OWNER/$REPO" --public --description "Abitur NRW 2027: Abi Espanol und Abi Geographie (Erdkunde) - interaktive Lernkurse" || fail "Repository konnte nicht angelegt werden."
+    gh repo create "$OWNER/$REPO" --public --description "Abitur NRW 2027: Abi Mathe, Abi English, Abi Espanol und Abi Geographie (Erdkunde) - interaktive Lernkurse" || fail "Repository konnte nicht angelegt werden."
     ok "https://github.com/$OWNER/$REPO angelegt"
   fi
   if gh api -X POST "repos/$OWNER/$REPO/pages" -f build_type=workflow >/dev/null 2>&1 \
@@ -86,9 +86,11 @@ if [ "$(printf '%s' "$REPO" | tr '[:upper:]' '[:lower:]')" = "$HOST" ]; then URL
 echo
 echo "=============================================="
 echo " Fertig! Startseite:  $URL"
+echo " Abi Mathe:           ${URL}mathe/"
+echo " Abi English:         ${URL}english/"
 echo " Abi Espanol:         ${URL}espanol/"
 echo " Abi Geographie:      ${URL}erdkunde/"
-echo " QR-Codes fuer Tablets/Handys: ${URL}espanol/install.html  und  ${URL}erdkunde/install.html"
+echo " QR-Codes fuer Tablets/Handys: ${URL}mathe/install.html, ${URL}english/install.html, ${URL}espanol/install.html  und  ${URL}erdkunde/install.html"
 echo "=============================================="
 echo " Spaeter aktualisieren: neue Dateien in diesen Ordner kopieren und dieses Skript erneut starten."
 (open "$URL" 2>/dev/null || xdg-open "$URL" 2>/dev/null) &

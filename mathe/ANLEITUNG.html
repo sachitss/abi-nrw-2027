@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anleitung · Abi Mathe 2027</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{--paper:#F3F5F8;--surface:#fff;--ink:#152033;--muted:#566178;--line:#D5DBE5;--red:#C2410C;--blue:#1E4DB7;--soft:#E9EDF3;--good:#1D7446}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#0E131C;--surface:#161D2A;--ink:#E6EAF2;--muted:#9AA4B8;--line:#2A3448;--red:#F08A4B;--blue:#86A8F5;--soft:#1D2535;--good:#5CCB8B}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 "Atkinson Hyperlegible",system-ui,sans-serif;padding-inline:16px;padding-block:24px 60px}
+main{max-width:760px;margin:0 auto}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;text-wrap:balance}
+h1{font-size:2rem;margin:.2em 0}
+h1 b{color:var(--red)}
+h2{margin-top:1.8em;padding-top:.6em;border-top:1px solid var(--line)}
+code,kbd,.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.88em;background:var(--soft);padding:1px 6px;border-radius:5px}
+a{color:var(--blue)}
+.lead{color:var(--muted);font-size:1.05rem}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.box.rec{border-left:4px solid var(--red)}
+.tag{font:700 .72rem/1 system-ui;letter-spacing:.05em;text-transform:uppercase;background:var(--soft);color:var(--muted);padding:4px 8px;border-radius:99px}
+.tag.r{background:var(--red);color:#fff}
+ol li,ul li{margin:.35em 0}
+table{width:100%;border-collapse:collapse;font-size:.94rem}
+th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+.wrap{overflow-x:auto}
+small{color:var(--muted)}
+</style>
+</head>
+<body><main>
+<p class="tag">Version 1.0 · Stand 30.09.2026</p>
+<h1>Abi <b>Mathe</b> 2027 installieren</h1>
+<p class="lead">Die App läuft komplett ohne Konto und ohne Internetverbindung. Dein Lernfortschritt bleibt auf deinem Gerät.</p>
+
+<div class="box">
+<h3>Welcher Weg passt zu dir?</h3>
+<div class="wrap"><table>
+<tr><th>Gerät</th><th>Empfohlener Weg</th><th>Aufwand</th></tr>
+<tr><td>Windows, Mac, Linux – einfach loslegen</td><td><a href="#a">A · Offline-Datei öffnen</a></td><td>10 Sekunden</td></tr>
+<tr><td>Windows, Mac, Linux – als eigene App</td><td><a href="#b">B · App installieren</a></td><td>2 Minuten</td></tr>
+<tr><td>iPad, iPhone, Android-Tablet, Android-Handy</td><td><a href="#c">C · Einmal ins Netz stellen, dann installieren</a></td><td>5 Minuten, einmalig</td></tr>
+</table></div>
+</div>
+
+<h2 id="a">A · Offline-Datei öffnen (alle Computer)</h2>
+<div class="box rec"><ol>
+<li>ZIP-Datei entpacken (Rechtsklick → <em>Alle extrahieren</em> bzw. Doppelklick auf dem Mac).</li>
+<li>Die Datei <code>Abi-Mathe-2027-Offline.html</code> doppelklicken.</li>
+<li>Sie öffnet sich im Browser (Chrome, Edge, Firefox oder Safari) – fertig.</li>
+</ol></div>
+<p>Alles steckt in dieser einen Datei: Lektionen, Übungen, Formeln, Schriften. Du kannst sie auf einen USB-Stick kopieren oder per E-Mail weitergeben.</p>
+<p><small>Wichtig: Der Fortschritt wird im Browser gespeichert. Öffne die Datei deshalb immer am selben Ort mit demselben Browser. Wenn du die Datei verschiebst, beginnt der Browser mit leerem Fortschritt – vorher auf der Startseite <em>Fortschritt sichern</em> und danach <em>Sicherung laden</em>.</small></p>
+
+<h2 id="b">B · Als App installieren (Windows, Mac, Linux)</h2>
+<p>So bekommt der Kurs ein eigenes Symbol und ein eigenes Fenster. Voraussetzung: Python 3 ist installiert (<a href="https://www.python.org/downloads/">python.org</a>; auf dem Mac meist schon vorhanden).</p>
+<ol>
+<li>ZIP entpacken und den Ordner an einen festen Ort legen (z. B. <em>Dokumente</em>).</li>
+<li>Starten:
+  <ul>
+  <li><strong>Windows:</strong> <code>Start-Windows.bat</code> doppelklicken. Bei einer SmartScreen-Warnung: <em>Weitere Informationen → Trotzdem ausführen</em>.</li>
+  <li><strong>Mac:</strong> <code>Start-Mac.command</code> mit Rechtsklick → <em>Öffnen</em> (nur beim ersten Mal nötig).</li>
+  <li><strong>Linux:</strong> <code>./start-linux.sh</code> im Terminal.</li>
+  </ul></li>
+<li>Der Browser öffnet <code>http://localhost:8027</code>. In <strong>Chrome oder Edge</strong> auf den orangefarbenen Knopf <em>Installieren</em> oben rechts oder das Installations-Symbol in der Adressleiste klicken.</li>
+<li>Die App erscheint im Startmenü bzw. im Dock. Sobald oben <em>Offline bereit</em> steht, funktioniert sie auch ohne gestartetes Fenster und ohne Internet.</li>
+</ol>
+<p><small>Safari am Mac: <em>Ablage → Zum Dock hinzufügen</em>. Firefox kann Web-Apps nicht installieren – dort Weg A nutzen.</small></p>
+
+<h2 id="c">C · iPad, iPhone und Android</h2>
+<p>Tablets und Handys können keine HTML-Dateien aus dem Dateimanager ausführen. Die App muss deshalb <strong>einmal auf einer Web-Adresse mit https</strong> liegen. Danach wird sie installiert und läuft offline.</p>
+<h3>Schritt 1 · Ins Netz stellen (einmalig, kostenlos)</h3>
+<p>Eine Möglichkeit von mehreren – nimm, was du oder deine Schule schon nutzt:</p>
+<ul>
+<li><strong>Schulserver / IServ / Webspace der Schule:</strong> den gesamten Ordner <code>abi-mathe-2027</code> hochladen.</li>
+<li><strong>Netlify Drop:</strong> auf <a href="https://app.netlify.com/drop">app.netlify.com/drop</a> den Ordner ins Browserfenster ziehen. Du erhältst eine Adresse wie <code>https://…netlify.app</code>.</li>
+<li><strong>GitHub Pages:</strong> Ordnerinhalt in ein Repository hochladen und unter <em>Settings → Pages</em> veröffentlichen.</li>
+</ul>
+<p><small>Die App sendet keine Daten an diesen Server. Er liefert nur die Dateien aus.</small></p>
+<h3>Schritt 2 · Installieren</h3>
+<div class="wrap"><table>
+<tr><th>iPad / iPhone (Safari)</th><th>Android (Chrome)</th></tr>
+<tr><td><ol><li>Adresse in <strong>Safari</strong> öffnen.</li><li>Teilen-Symbol (Quadrat mit Pfeil) antippen.</li><li><em>Zum Home-Bildschirm</em> → <em>Hinzufügen</em>.</li></ol></td>
+<td><ol><li>Adresse in <strong>Chrome</strong> öffnen.</li><li>Auf <em>Installieren</em> tippen – oder Menü ⋮ → <em>App installieren</em>.</li><li>Bestätigen.</li></ol></td></tr>
+</table></div>
+<p>Die App einmal mit Internet öffnen und warten, bis oben <em>Offline bereit</em> erscheint. Danach funktioniert sie auch im Flugmodus.</p>
+
+<h2>Sprachausgabe für Podcasts und Erklärclips</h2>
+<p>Podcasts und Erklärclips werden von der Sprachausgabe deines Geräts vorgelesen (deutsche Stimme). Auf den meisten Geräten ist sie vorinstalliert; sonst in den Einstellungen unter Bedienungshilfen bzw. Sprachausgabe eine deutsche Stimme hinzufügen.</p>
+
+<h2>Was die installierte Version zusätzlich kann</h2>
+<ul>
+<li><strong>Fortschritt sichern und laden:</strong> auf der Startseite unter <em>Deine Daten</em> – für Gerätewechsel oder als Backup.</li>
+<li><strong>Offline:</strong> alle Inhalte und Schriften sind lokal gespeichert.</li>
+</ul>
+
+<h2>Daten und Datenschutz</h2>
+<ul>
+<li>Kein Konto, keine Anmeldung, keine Werbung, keine Analyse-Dienste.</li>
+<li>Fortschritt, Notizen, Entwürfe und Markierungen liegen im Speicher des Browsers auf deinem Gerät.</li>
+<li>Browserdaten löschen oder die App deinstallieren löscht auch den Fortschritt. Vorher sichern.</li>
+<li>Links zu den amtlichen NRW-Dokumenten öffnen nur, wenn du sie antippst und online bist.</li>
+</ul>
+
+<h2>Aktualisieren und Deinstallieren</h2>
+<ul>
+<li><strong>Weg A:</strong> neue Offline-Datei an dieselbe Stelle kopieren (gleicher Dateiname) – der Fortschritt bleibt.</li>
+<li><strong>Weg C:</strong> neuen Ordner auf den Server hochladen. Die App zeigt dann <em>Neue Version verfügbar</em>.</li>
+<li><strong>Deinstallieren:</strong> Symbol lange drücken → Entfernen (Tablet/Handy) bzw. in Chrome/Edge im App-Fenster Menü → Deinstallieren.</li>
+</ul>
+
+<h2>Häufige Probleme</h2>
+<div class="wrap"><table>
+<tr><th>Problem</th><th>Lösung</th></tr>
+<tr><td>Kein Ton</td><td>Lautstärke prüfen, auf ▶ tippen (Ton startet nur nach Tippen), deutsche Stimme installieren.</td></tr>
+<tr><td>Kein <em>Installieren</em>-Knopf</td><td>Nur Chrome/Edge (Computer, Android) zeigen ihn. iPad/iPhone: Teilen → Zum Home-Bildschirm. Firefox: Weg A.</td></tr>
+<tr><td>Fortschritt ist weg</td><td>Anderer Browser, anderer Speicherort oder gelöschte Browserdaten. <em>Sicherung laden</em> nutzen.</td></tr>
+<tr><td>Start-Skript öffnet nichts</td><td>Python ist nicht installiert – Weg A nutzen.</td></tr>
+<tr><td>Aufnahme geht nicht</td><td>Mikrofon für den Browser bzw. die App in den Geräte-Einstellungen erlauben.</td></tr>
+</table></div>
+
+<h2>Inhalt des Pakets</h2>
+<div class="wrap"><table>
+<tr><td><code>Abi-Mathe-2027-Offline.html</code></td><td>Komplette App in einer Datei (Weg A)</td></tr>
+<tr><td><code>index.html</code>, <code>app/</code>, <code>fonts/</code>, <code>icons/</code></td><td>Installierbare App (Weg B und C)</td></tr>
+<tr><td><code>manifest.webmanifest</code>, <code>sw.js</code></td><td>App-Beschreibung und Offline-Speicher</td></tr>
+<tr><td><code>Start-Windows.bat</code>, <code>Start-Mac.command</code>, <code>start-linux.sh</code></td><td>Lokaler Start für Weg B</td></tr>
+<tr><td><code>fonts/LIZENZEN/</code></td><td>Schriftlizenzen (SIL Open Font License)</td></tr>
+</table></div>
+
+<h2>Hinweis zu den Inhalten</h2>
+<p>Die Prüfungsvorgaben (Aufbau, Zeiten, Punkte, Operatoren, Schwerpunkte, Termin 15.04.2027) stammen aus den amtlichen Dokumenten von Standardsicherung NRW für das <strong>Abitur 2027</strong>, Stand September 2026. Alle Übungstexte, Hörtexte und Probeklausuren sind eigens erstellt und keine Originalprüfungen. Die automatische Schreibrückmeldung ersetzt keine Bewertung durch Lehrkräfte. Prüfe kurz vor der Prüfung die aktuellen Angaben deiner Schule.</p>
+</main></body></html>
